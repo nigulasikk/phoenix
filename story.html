@@ -67,6 +67,18 @@
   order: 6;
 }
 
+.demo-card:nth-child(7) {
+  order: 4;
+}
+
+.demo-card:nth-child(8) {
+  order: 8;
+}
+
+.demo-card:nth-child(9) {
+  order: 5;
+}
+
 
 /* Border Box */
 
@@ -112,7 +124,7 @@ body {
     display: flex;
     flex-flow: column wrap;
     width: 1170px;
-    height: 1650px;
+    height: 2650px;
     margin: 0 auto;
   }
 }
@@ -157,7 +169,7 @@ body {
 @media (min-width: 1000px) {
   #timeline .demo-card {
     max-width: 450px;
-    height: 400px;
+    /*height: 400px;*/
     margin: 90px;
     margin-top: 45px;
     margin-bottom: 45px;
@@ -245,8 +257,8 @@ body {
 }
 
 @media (min-width: 1000px) {
-  #timeline .demo-card .body {
-    height: 315px;
+  #timeline .demo-card .body {400
+    /*height: 315px;*/
   }
 }
 
@@ -300,12 +312,15 @@ body {
 #timeline .demo-card--step5 .head::after {
   border-color: #ff5252;
 }
+.img{
+  margin-top:10px;
+}
 </style>
 </head>
 <body>
    <section id=timeline>
-  <h1>Flexbox Timeline</h1>
-  <p class="leader">http://freefrontend.com/css-timelines/#vertical-timelines</p>
+  <h1>Love Timeline</h1>
+  <p class="leader">Nicolas and Phoenix </p>
   
   <div class="demo-card-wrapper">
     <div class="demo-card demo-card--step1">
@@ -313,66 +328,78 @@ body {
         <div class="number-box">
           <span>01</span>
         </div>
-        <h2><span class="small">Subtitle</span> Technology</h2>
+        <h2><span class="small">2016.08</span> 初见</h2>
       </div>
       <div class="body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-        <img src="http://placehold.it/1000x500" alt="Graphic">
+        <p>“我叫邓晓雨，邓小平的邓，春晓的晓，下雨的雨” 。第一次遇到你的时候，绝对没有想到之后自己会如此的喜欢你。</p>
+        <!-- <img src="http://placehold.it/1000x500" alt="Graphic"> -->
       </div>
     </div>
 
     <div class="demo-card demo-card--step2">
       <div class="head">
         <div class="number-box">
-          <span>02</span>
+          <span>13</span>
         </div>
-        <h2><span class="small">Subtitle</span> Confidence</h2>
+        <h2><span class="small">2016.08</span> 初识</h2>
       </div>
       <div class="body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-        <img src="http://placehold.it/1000x500" alt="Graphic">
+        <p>江监分享《黑客与画家》，期间您插嘴道🎬《HER》，我们对了几句，花花开玩笑说晚上我就归你好了。那时候我觉得你是一个蛮有意思的姑娘，虽然没怎么交流，但心里已经埋下了种子.(偷偷告诉你，那个礼拜我也有重温那部电影)</p>
+        <img class="img" src="story/meeting.jpg" alt="Graphic">
+        <img class="img" src="story/her.jpg" alt="Graphic">
       </div>
     </div>
 
     <div class="demo-card demo-card--step3">
       <div class="head">
         <div class="number-box">
-          <span>03</span>
+          <span>28</span>
         </div>
-        <h2><span class="small">Subtitle</span> Adaptation</h2>
+        <h2><span class="small">2016.08</span> 公司聚餐</h2>
       </div>
       <div class="body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-        <img src="http://placehold.it/1000x500" alt="Graphic">
-      </div>
-    </div>
-
-    <div class="demo-card demo-card--step4">
-      <div class="head">
-        <div class="number-box">
-          <span>04</span>
-        </div>
-        <h2><span class="small">Subtitle</span> Consistency</h2>
-      </div>
-      <div class="body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-        <img src="http://placehold.it/1000x500" alt="Graphic">
+        <p>可能是被你漂亮的脸蛋抑或是一身红裙的气质吸引吧（虽然我不承认），但我不得不承认的是那天我看到了你身上不一样的一些特质：会拒绝咸猪手（用找我聊天的方式来聪明的拒绝），会向身边的人请求合理的帮助（大晚上自己找不到路，怕黑和自己不安全，叫我送你回出租屋，当然这一定不是在套路我啦），很善良会照顾人(透过后视镜，看到你在那里像哄小孩那样照顾喝醉的同事，那一刻我幻想过你是我女朋友，后来居然梦想成真😊)</p>
+        <img class="img" src="story/west.jpg" alt="Graphic">
       </div>
     </div>
 
     <div class="demo-card demo-card--step5">
       <div class="head">
         <div class="number-box">
-          <span>05</span>
+          <span>01</span>
         </div>
-        <h2><span class="small">Subtitle</span> Conversion</h2>
+        <h2><span class="small">2016.09</span> 第一次梦见你</h2>
       </div>
       <div class="body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-        <img src="http://placehold.it/1000x500" alt="Graphic">
+        <p>梦见你对我笑，就知道，我又做梦了...</p>
+        <img class="img" src="story/dream.jpg" alt="Graphic">
       </div>
     </div>
     
+    <div class="demo-card demo-card--step4">
+      <div class="head">
+        <div class="number-box">
+          <span>31</span>
+        </div>
+        <h2><span class="small">2016.08</span> 实习最后一天</h2>
+      </div>
+      <div class="body">
+        <p>这是你实习的最后一天，也是G20放假前的最后一天，所以下午开始就没心思工作了。你过来问了我一个模拟器相关的技术问题后，我们就开始闲聊，从电影《HER》聊到人工智能瓶颈，职业规划，印度电影，从凌晨四点的洛杉矶到阿米尔汗，你居然都知道，这一刻，我觉得如果能保持联系的话，我们应该会是很好的朋友，生活中我很少能碰到聊得开的人。</p>
+      </div>
+    </div>
+
+     <div class="demo-card demo-card--step5">
+      <div class="head">
+        <div class="number-box">
+          <span>18</span>
+        </div>
+        <h2><span class="small">2016.9</span> </h2>
+      </div>
+      <div class="body">
+        <p>这几天有点像戏一般，显示车被撞，撞车人逃逸，找小区监控，找交警 没人帮忙找车牌号，上1818黄金眼，找物业。后来灵机一动再查监控，找到肇事者公司，协商，报警，最后又放弃追究她法律责任。一件蛮傻的事情，处理的过程中我也感到了年轻人涉世不深的尴尬，也很感谢这那几天晚上你的倾听让我并不感到孤独。</p>
+      </div>
+    </div>
+
   </div>
 </section>
 </body>
