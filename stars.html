@@ -336,7 +336,7 @@ var Countdown = {
     };
 
     // Init countdown values
-    var gapMillionTime = new Date().getTime() - new Date('2016-11-05 23:23').getTime();
+    var gapMillionTime = new Date().getTime()-new Date('2016-11-05 23:23').getTime();
     var gapDays = Math.floor(gapMillionTime/1000/60/60/24);
     var gapHours = Math.floor(gapMillionTime%(1000*60*60*24)/1000/60/60);
     var gapMinutes = Math.floor(gapMillionTime%(1000*60*60)/1000/60);
@@ -348,7 +348,7 @@ var Countdown = {
         seconds: gapSeconds,
         days: gapDays
     };
-    console.log(this.values)
+    
     // Initialize total seconds
     this.total_seconds = this.values.hours * 60 * 60 + (this.values.minutes * 60) + this.values.seconds;
 
