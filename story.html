@@ -46,95 +46,112 @@
   }
   
   .demo-card:nth-child(2) {
-    order: 2;
+    order: 100;
   }
   
   .demo-card:nth-child(3) {
-    order: 3;
+    order: 2;
   }
   
   .demo-card:nth-child(4) {
-    order: 4;
+    order: 101;
   }
   
   .demo-card:nth-child(5) {
-    order: 5;
+    order: 3;
   }
   
   .demo-card:nth-child(6) {
-    order: 6;
+    order: 4;
+
   }
-  
+ 
+ #timeline .demo-card:nth-child(6) .head::before, #timeline .demo-card:nth-child(10) .head::before, #timeline .demo-card:nth-child(16) .head::before , #timeline .demo-card:nth-child(18) .head::before{
+    left: 491.5px;
+  }
+  #timeline .demo-card:nth-child(13) .head::after{
+        border-color: #2b87f3;
+            position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+ 
   .demo-card:nth-child(7) {
-    order: 7;
+    order: 4;
   }
   
   .demo-card:nth-child(8) {
-    order: 8;
+    order: 103;
   }
   
-  .demo-card:nth-child(9) {
-    order: 9;
+  #timeline .demo-card-wrapper .demo-card:nth-child(9) {
+    order: 5;
+    margin-top:150px;
   }
  .demo-card:nth-child(10) {
-    order: 10;
+    order: 5;
   }
   .demo-card:nth-child(11) {
-    order: 11;
+    order: 6;
   }
   .demo-card:nth-child(12) {
-    order: 12;
+    order: 105;
   }
   .demo-card:nth-child(13) {
-    order: 13;
+    order: 7;
   }
   .demo-card:nth-child(14) {
-    order: 14;
+    order: 106;
   }
   .demo-card:nth-child(15) {
-    order: 15;
+    order: 8;
   }
   .demo-card:nth-child(16) {
-    order: 16;
+    order: 9;
   }
   .demo-card:nth-child(17) {
-    order: 17;
+    order: 108;
   }
   .demo-card:nth-child(18) {
-    order: 18;
+    order: 9;
   }
   .demo-card:nth-child(19) {
-    order: 19;
+    order: 109;
   }
   .demo-card:nth-child(20) {
-    order: 20;
+    order: 109;
   }
   .demo-card:nth-child(21) {
-    order: 21;
+    order: 11;
   }
   .demo-card:nth-child(22) {
-    order: 22;
+    order: 110;
   }
  .demo-card:nth-child(23) {
-    order: 23;
+    order: 12;
   }
   .demo-card:nth-child(24) {
-    order: 24;
+    order: 111;
   }
-  .demo-card:nth-child(25) {
-    order: 25;
+  #timeline .demo-card-wrapper .demo-card:nth-child(25) {
+    order: 13;
+    margin-bottom:100px;
   }
  .demo-card:nth-child(26) {
-    order: 26;
+    order: 112;
   }
  .demo-card:nth-child(27) {
-    order: 27;
+    order: 14;
   }
   .demo-card:nth-child(28) {
-    order: 28;
+    order: 113;
   }
   .demo-card:nth-child(29) {
-    order: 29;
+    order: 15;
   }
 
 
@@ -181,7 +198,7 @@
       display: flex;
       flex-flow: column wrap;
       width: 1170px;
-      height: 9650px;
+      height: 7950px;
       margin: 0 auto;
     }
   }
@@ -234,6 +251,17 @@
     #timeline .demo-card:nth-child(odd) {
       margin-right: 45px;
     }
+    /*特定的左边*/
+    #timeline .demo-card-wrapper .demo-card:nth-child(6),#timeline .demo-card-wrapper .demo-card:nth-child(10),#timeline .demo-card-wrapper .demo-card:nth-child(16),#timeline .demo-card-wrapper .demo-card:nth-child(18){
+      left: 45px;
+    }
+    #timeline .demo-card-wrapper .demo-card:nth-child(6) .head::after,#timeline .demo-card-wrapper .demo-card:nth-child(10) .head::after,#timeline .demo-card-wrapper .demo-card:nth-child(16) .head::after,#timeline .demo-card-wrapper .demo-card:nth-child(18) .head::after{
+      border-left-width: 15px;
+      border-left-style: solid;
+      left: 100%;
+    }
+    /*特定的左边  END*/
+
     #timeline .demo-card:nth-child(odd) .head::after {
       border-left-width: 15px;
       border-left-style: solid;
@@ -242,6 +270,20 @@
     #timeline .demo-card:nth-child(odd) .head::before {
       left: 491.5px;
     }
+    /*特定的右边*/
+     #timeline .demo-card-wrapper .demo-card:nth-child(17),#timeline .demo-card-wrapper .demo-card:nth-child(19){
+        left:-45px;
+     }
+      #timeline .demo-card-wrapper .demo-card:nth-child(17) .head::before ,#timeline .demo-card-wrapper .demo-card:nth-child(19) .head::before {
+      left: -48px;
+     }
+      #timeline .demo-card-wrapper .demo-card:nth-child(17) .head::after ,#timeline .demo-card-wrapper .demo-card:nth-child(19) .head::after {
+            border-left:none;
+     }
+
+
+    /*特定的右边  END*/
+
     #timeline .demo-card:nth-child(even) {
       margin-left: 45px;
     }
@@ -825,7 +867,7 @@
         </div>
         <div class="body">
           <p>
-            总感觉996的节奏约会时间不够用，一周也只能见到1次面，这天去了之前约过的 杭州最美书店 《钟书阁》，晚饭后在钱塘江边上散步，聊天，还给您展现了魔术，我们都非常开心，有好多机会都忍不住想吻你，但最后....
+            总感觉996的节奏约会时间不够用，一周也只能见到1次面，这天我们不约而同地穿上了情侣装，去了之前约过的 杭州最美书店 《钟书阁》，晚饭后在钱塘江边上散步，聊天，还给您展现了魔术，我们都非常开心，有好多时刻我都有想吻你的冲动，但最后....
           </p>
           <img class="img" src="story/zhongshuge.jpg" alt="Graphic">
 
@@ -959,7 +1001,7 @@
           <div class="number-box">
             <span>21</span>
           </div>
-          <h2><span class="small">2017.01</span> </h2>
+          <h2><span class="small">2017.01</span>第一次带你回家 </h2>
         </div>
         <div class="body">
           <p>
@@ -987,7 +1029,7 @@
           <div class="number-box">
             <span>06</span>
           </div>
-          <h2><span class="small">2017.02</span> </h2>
+          <h2><span class="small">2017.02</span> 第一次去火车站接人</h2>
         </div>
         <div class="body">
           <p>
@@ -1001,7 +1043,7 @@
           <div class="number-box">
             <span>22</span>
           </div>
-          <h2><span class="small">2017.02</span> </h2>
+          <h2><span class="small">2017.02</span> 被安利用mac</h2>
         </div>
         <div class="body">
           <p>
@@ -1017,7 +1059,7 @@
           <div class="number-box">
             <span>17</span>
           </div>
-          <h2><span class="small">2017.03</span> </h2>
+          <h2><span class="small">2017.03</span>学修眉的宝宝</h2>
         </div>
         <div class="body">
           <p>
@@ -1049,7 +1091,7 @@
           <div class="number-box">
             <span>29</span>
           </div>
-          <h2><span class="small">2017.04</span> </h2>
+          <h2><span class="small">2017.04</span> 我的老婆大人</h2>
         </div>
         <div class="body">
           <p>
