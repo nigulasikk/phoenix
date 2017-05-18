@@ -1,0 +1,67 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1494837156094'); /* IE9*/
+  src: url('iconfont.eot?t=1494837156094#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1494837156094') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1494837156094') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1494837156094#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--angel:before { content: "\e6e8"; }
+
+.icon--astonished-:before { content: "\e6e9"; }
+
+.icon--cool:before { content: "\e6ea"; }
+
+.icon--confused:before { content: "\e6eb"; }
+
+.icon--cool-:before { content: "\e6ec"; }
+
+.icon--dizzy:before { content: "\e6ed"; }
+
+.icon--cry-:before { content: "\e6ee"; }
+
+.icon--expressionless:before { content: "\e6ef"; }
+
+.icon--devil:before { content: "\e6f0"; }
+
+.icon--flushed:before { content: "\e6f1"; }
+
+.icon--in-love:before { content: "\e6f2"; }
+
+.icon--kiss-:before { content: "\e6f3"; }
+
+.icon--mask:before { content: "\e6f4"; }
+
+.icon--mute:before { content: "\e6f5"; }
+
+.icon--sad:before { content: "\e6f6"; }
+
+.icon--sad-:before { content: "\e6f7"; }
+
+.icon--shocked:before { content: "\e6f8"; }
+
+.icon--sick:before { content: "\e6f9"; }
+
+.icon--smile-:before { content: "\e6fa"; }
+
+.icon--smiling:before { content: "\e6fb"; }
+
+.icon--sweat:before { content: "\e6fc"; }
+
+.icon--thinking:before { content: "\e6fd"; }
+
+.icon--tongue:before { content: "\e6fe"; }
+
+.icon--vomiting:before { content: "\e6ff"; }
+
+.icon--vomiting-:before { content: "\e700"; }
+
