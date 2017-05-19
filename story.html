@@ -7,6 +7,7 @@
   <title>Phoenix.Deng | Blog</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="font/iconfont.js"></script>
   <style>
   /*@import url('https://fonts.googleapis.com/css?family=Titillium+Web');*/
@@ -381,8 +382,13 @@
       font-size: 165%;
       line-height: 1.2rem;
     }
+  
+  
   }
   
+
+  
+
   #timeline .demo-card .head h2 span {
     display: block;
     font-size: 0.6rem;
@@ -660,6 +666,37 @@
     left: 0;
     right: 0;
     margin: auto;
+  }
+  @media (max-width: 680px) {
+   .countdown {
+    width: 400px;
+    margin: 0 auto;
+   }
+   .countdown .bloc-time {
+        margin-top: 30px;
+    }
+    .countdown .figure{
+      width:55px;
+      height: 100px;
+    }
+    .countdown .figure > span{
+      font-size: 40px;
+    }
+    h1 {
+        text-align: center;
+        font: 300 2.25em "Lato";
+        text-transform: uppercase;
+        font-size:16px;
+    }
+    .wrap {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 510px;
+    }
   }
   </style>
 </head>
@@ -1094,7 +1131,7 @@
           </p>
         </div>
       </div>
-      <div class="demo-card demo-card--step-style" style="margin-top:170px;">
+      <div class="demo-card demo-card--step-style" style="margin-top:220px;">
         <div class="head">
           <div class="number-box">
             <span>06</span>

@@ -11,14 +11,12 @@ var imagemin = require('gulp-imagemin');
 
 gulp.task('imageMin', function() {
     return gulp.src(['storySource/*'],{base:''})
-        .pipe(imagemin({
-            progressive: true,
-            optimizationLevel: 1,
-            svgoPlugins: [{
-                removeViewBox: false
-            }],
-            use: [pngquant()]
-        }))
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({plugins: [{removeViewBox: true}]})
+        ]))
         .pipe(gulp.dest('story2'));
 });
 
